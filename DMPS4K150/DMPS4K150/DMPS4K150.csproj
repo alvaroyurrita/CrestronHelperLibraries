@@ -1,0 +1,171 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{455751FB-5763-4C38-9B02-9C3DC092FE62}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DMPS4K150</RootNamespace>
+    <AssemblyName>DMPS4K150</AssemblyName>
+    <ProjectTypeGuids>{0B4745B0-194B-4BB6-8E21-E9057CA92230};{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>SmartDeviceProject1</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Crestron.SimplSharpPro.DeviceSupport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ProgramData\Crestron\SDK\SSPDevices\Crestron.SimplSharpPro.DeviceSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Crestron.SimplSharpPro.DM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\ProgramData\Crestron\SDK\SSPDevices\Crestron.SimplSharpPro.DM.dll</HintPath>
+    </Reference>
+    <Reference Include="Crestron.SimplSharpPro.Keypads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\ProgramData\Crestron\SDK\SSPDevices\Crestron.SimplSharpPro.Keypads.dll</HintPath>
+    </Reference>
+    <Reference Include="Crestron.SimplSharpPro.ThreeSeriesCards, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ProgramData\Crestron\SDK\SSPDevices\Crestron.SimplSharpPro.ThreeSeriesCards.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="SimplSharpCustomAttributesInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ProgramData\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpHelperInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ProgramData\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpPro, Version=1.5.3.17, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ProgramData\Crestron\SDK\SimplSharpPro.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlSystem.cs" />
+    <Compile Include="DMPS4K150C_SwitcherOutput.cs" />
+    <Compile Include="DMPS4K150C_DM_Output.cs" />
+    <Compile Include="DMPS4K150C_AnalogAudioOutput.cs" />
+    <Compile Include="DMPS4K150C_Mic1.cs" />
+    <Compile Include="DMPS4K150C_DM_Input.cs" />
+    <Compile Include="DMPS4K150C_VGA_Input.cs" />
+    <Compile Include="DMPS4K150C_AVControl.cs" />
+    <Compile Include="DMPS4K150C_DeviceControl.cs" />
+    <Compile Include="DMPS4K150C_HDMI_Input.cs" />
+    <Compile Include="eAspectRatio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DMPS4K150C_SwitcherInput.cs" />
+    <Compile Include="Test Components\Test2Relays.cs" />
+    <Compile Include="Test Components\TestDigitalInputs.cs" />
+    <Compile Include="Test Components\TestDMRmc4KZ100C.cs" />
+    <Compile Include="Test Components\TestDMTx4K100C1G.cs" />
+    <Compile Include="Test Components\TestDMRmc4KZ100C1G.cs" />
+    <Compile Include="Test Components\TestEthernetInformation.cs" />
+    <Compile Include="Test Components\TestIR.cs" />
+    <Compile Include="Test Components\TestSystemControl.cs" />
+    <Compile Include="Test Components\TestSystemInformation.cs" />
+    <Compile Include="Test Components\TestSystemMonitor.cs" />
+    <Compile Include="Test Components\TestUsbHids.cs" />
+    <Compile Include="Test Components\TestDMOutput.cs" />
+    <Compile Include="Test Components\TestAnalogAudioOutput.cs" />
+    <Compile Include="Test Components\TestMic1.cs" />
+    <Compile Include="Test Components\TestDMInput.cs" />
+    <Compile Include="Test Components\TestVGAInput.cs" />
+    <Compile Include="Test Components\TestAVControl.cs" />
+    <Compile Include="Test Components\TestDeviceControl.cs" />
+    <Compile Include="Test Components\TestHDMIInput.cs" />
+    <Compile Include="Test Components\TestControlSystemType.cs" />
+    <Compile Include="Test Components\TestDMPS3TwoWaySerialDriver.cs" />
+    <None Include="IRFiles\ACER WIL-8458MA.ir">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="IRFiles\adcom_gdd_1.ir">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\ControlSystem.cfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\CECDevice\CECDevices.csproj">
+      <Project>{AC5FCAF3-2B0C-4B5D-8F26-9449D8633040}</Project>
+      <Name>CECDevices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\ConnectItDevices\ConnectItDevices.csproj">
+      <Project>{D42F7320-C4D8-4BDC-AF36-D96E4837E0D4}</Project>
+      <Name>ConnectItDevices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\DMReceivers\DMReceivers.csproj">
+      <Project>{90F83465-DE85-4226-97ED-6217F73F9948}</Project>
+      <Name>DMReceivers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\DMTransmitters\DMTransmitters.csproj">
+      <Project>{993C402B-B858-4B9C-98D5-5270353460BF}</Project>
+      <Name>DMTransmitters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\HDCPSupport\HDCPSupport.csproj">
+      <Project>{85C05F58-95B3-4B8D-8E47-9158FBF205E4}</Project>
+      <Name>HDCPSupport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\IOPorts\IOPorts.csproj">
+      <Project>{F61BFE87-AB86-4E9A-B231-B44875BD7083}</Project>
+      <Name>IOPorts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\Relays\Relays.csproj">
+      <Project>{2535362A-D53F-44CA-96E4-81C2A4DA19C1}</Project>
+      <Name>Relays</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\SerialDrivers\Serial_Drivers.csproj">
+      <Project>{B6EC0A6F-E728-411A-83D2-AF68DCA83C80}</Project>
+      <Name>Serial_Drivers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\System_Monitors\System_Monitors.csproj">
+      <Project>{7134A9FA-4C35-445D-ABD4-F44B8DE0A2CB}</Project>
+      <Name>System_Monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\USBPorts\USBPorts.csproj">
+      <Project>{3C345C7E-6295-44E8-A524-BEE3C613D7FE}</Project>
+      <Name>C2I-USB-HID</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>rem S# Pro preparation will execute after these operations</PostBuildEvent>
+  </PropertyGroup>
+</Project>
