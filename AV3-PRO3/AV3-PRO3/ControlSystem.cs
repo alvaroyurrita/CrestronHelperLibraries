@@ -17,17 +17,7 @@ namespace AV3_PRO3
         #endregion
 
         #region Add-On Cards
-        public C3com3 ComPortCard;
-        public C3io16 VersiPortCard;
-        public C3ir8 IRCard;
-        public C3ry16 RelayCard16;
-        public C3ry8 RelayCard8;
 
-        //Extra IOs.  Only showing one.  Add as necessary
-        public ComPort Com07;
-        public Versiport Versiport9;
-        public Relay Relay9;
-        public IROutputPort IR9;
         #endregion  
 
         //constructor
