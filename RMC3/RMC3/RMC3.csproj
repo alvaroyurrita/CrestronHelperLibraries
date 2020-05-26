@@ -48,7 +48,7 @@
   <ItemGroup>
     <Reference Include="Crestron.SimplSharpPro.DeviceSupport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\ProgramData\Crestron\SDK\SSPDevices\Crestron.SimplSharpPro.DeviceSupport.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\ProgramData\Crestron\SDK\SSPDevices\Crestron.SimplSharpPro.DeviceSupport.dll</HintPath>
     </Reference>
     <Reference Include="IOPorts, Version=1.0.0.21431, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -65,15 +65,15 @@
     </Reference>
     <Reference Include="SimplSharpCustomAttributesInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
     </Reference>
     <Reference Include="SimplSharpHelperInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
     </Reference>
     <Reference Include="SimplSharpPro, Version=1.5.3.17, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpPro.exe</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpPro.exe</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -90,6 +90,20 @@
   <ItemGroup>
     <Compile Include="ControlSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test Components\Test2Relays.cs" />
+    <Compile Include="Test Components\TestDigitalInputs.cs" />
+    <Compile Include="Test Components\TestEthernetInformation.cs" />
+    <Compile Include="Test Components\TestIR.cs" />
+    <Compile Include="Test Components\TestSystemControl.cs" />
+    <Compile Include="Test Components\TestSystemInformation.cs" />
+    <Compile Include="Test Components\TestSystemMonitor.cs" />
+    <Compile Include="Test Components\TestTwoWayComPort.cs" />
+    <None Include="IRFiles\ACER WIL-8458MA.ir">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="IRFiles\adcom_gdd_1.ir">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\ControlSystem.cfg" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />

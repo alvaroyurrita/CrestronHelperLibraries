@@ -32,20 +32,6 @@ namespace RMC3
         public USBPort C2I_USB_HID;
         #endregion
 
-
-        /// <summary>
-        /// ControlSystem Constructor. Starting point for the SIMPL#Pro program.
-        /// Use the constructor to:
-        /// * Initialize the maximum number of threads (max = 400)
-        /// * Register devices
-        /// * Register event handlers
-        /// * Add Console Commands
-        /// 
-        /// Please be aware that the constructor needs to exit quickly; if it doesn't
-        /// exit in time, the SIMPL#Pro program will exit.
-        /// 
-        /// You cannot send / receive data in the constructor
-        /// </summary>
         public ControlSystem()
             : base()
         {
@@ -72,27 +58,22 @@ namespace RMC3
                     C2I_RMC3_DI2 = DigitalInputs2Card.GetSlot2DigitalInputs(DigitalInputPorts);
                     //Slot-06
                     C2I_RMC3_RY2 = Relays2Card.GetRelay2Card(RelayPorts);
-                    //Slot-07 Port-01
+                    //Slot-07.Port-01
                     IR1 = this.IROutputPorts[1];
-                    //Slot-07 Port-02
+                    //Slot-07.Port-02
                     IR2 = this.IROutputPorts[2];
                     //Slot-08
                     C2I_RMC3_SYSTEMMONITOR = System_Monitor.GetSystemMonitor();
-                    //Slot-07.Slot-01
+                    //Slot-08.Slot-01
                     C2I_RMC3_SYSTEMCONTROL = System_Control.GetSystemControl();
-                    //Slot-7.Slot-02
+                    //Slot-08.Slot-02
                     C2I_RMC3_SYSTEMINFORMATION = System_Information.GetSystemInformation();
-                    //Slot-10.Slot-01
+                    //Slot-11.Slot-01
                     C2I_USB_HID = new USBPort(UsbHids[1]);
                     #endregion
 
 
                     Thread.MaxNumberOfUserThreads = 200;
-
-                    //Subscribe to the controller events (System, Program, and Ethernet)
-                    //CrestronEnvironment.SystemEventHandler += new SystemEventHandler(ControlSystem_ControllerSystemEventHandler);
-                    //CrestronEnvironment.ProgramStatusEventHandler += new ProgramStatusEventHandler(ControlSystem_ControllerProgramEventHandler);
-                    //CrestronEnvironment.EthernetEventHandler += new EthernetEventHandler(ControlSystem_ControllerEthernetEventHandler);
                 }
                 catch (Exception e)
                 {
@@ -101,23 +82,20 @@ namespace RMC3
             }
         }
 
-        /// <summary>
-        /// InitializeSystem - this method gets called after the constructor 
-        /// has finished. 
-        /// 
-        /// Use InitializeSystem to:
-        /// * Start threads
-        /// * Configure ports, such as serial and verisports
-        /// * Start and initialize socket connections
-        /// Send initial device configurations
-        /// 
-        /// Please be aware that InitializeSystem needs to exit quickly also; 
-        /// if it doesn't exit in time, the SIMPL#Pro program will exit.
-        /// </summary>
+
         public override void InitializeSystem()
         {
             try
             {
+                //Test_Components.TestEthernetInformation.Start(Ethernet_Information);
+                //Test_Components.TestTwoWayComPort TestCom01 = new Test_Components.TestTwoWayComPort(Com01);
+                Test_Components.TestDigitalInputs.Start(C2I_RMC3_DI2);
+                //Test_Components.Test2Relays.Start(C2I_RMC3_RY2);
+                //Test_Components.TestIR.Start(IRIn1);
+                //Test_Components.TestSystemMonitor.Start(SysMon);
+                //Test_Components.TestSystemControl.Start(SysControl);
+                //Test_Components.TestSystemInformation.Start(C2I_CP3_SYSTEMINFORMATION);
+
                 
             }
             catch (Exception e)
