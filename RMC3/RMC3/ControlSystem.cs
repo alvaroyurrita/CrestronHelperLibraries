@@ -88,10 +88,10 @@ namespace RMC3
             try
             {
                 //Test_Components.TestEthernetInformation.Start(Ethernet_Information);
-                //Test_Components.TestTwoWayComPort TestCom01 = new Test_Components.TestTwoWayComPort(Com01);
-                Test_Components.TestDigitalInputs.Start(C2I_RMC3_DI2);
+                Test_Components.TestTwoWayComPort TestCom01 = new Test_Components.TestTwoWayComPort(Com01);
+                //Test_Components.TestDigitalInputs.Start(C2I_RMC3_DI2);
                 //Test_Components.Test2Relays.Start(C2I_RMC3_RY2);
-                //Test_Components.TestIR.Start(IRIn1);
+                //Test_Components.TestIR.Start(IR1);
                 //Test_Components.TestSystemMonitor.Start(SysMon);
                 //Test_Components.TestSystemControl.Start(SysControl);
                 //Test_Components.TestSystemInformation.Start(C2I_CP3_SYSTEMINFORMATION);
