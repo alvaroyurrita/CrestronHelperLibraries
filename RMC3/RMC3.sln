@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMC3", "RMC3\RMC3.csproj", "{0A4C9531-E10E-4923-B545-86C2A9367A85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOPorts", "..\Libraries\IOPorts\IOPorts.csproj", "{F61BFE87-AB86-4E9A-B231-B44875BD7083}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relays", "..\Libraries\Relays\Relays.csproj", "{2535362A-D53F-44CA-96E4-81C2A4DA19C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serial_Drivers", "..\Libraries\SerialDrivers\Serial_Drivers.csproj", "{B6EC0A6F-E728-411A-83D2-AF68DCA83C80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USBPorts", "..\Libraries\USBPorts\USBPorts.csproj", "{3C345C7E-6295-44E8-A524-BEE3C613D7FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System_Monitors", "..\Libraries\System_Monitors\System_Monitors.csproj", "{7134A9FA-4C35-445D-ABD4-F44B8DE0A2CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A4C9531-E10E-4923-B545-86C2A9367A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A4C9531-E10E-4923-B545-86C2A9367A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A4C9531-E10E-4923-B545-86C2A9367A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A4C9531-E10E-4923-B545-86C2A9367A85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F61BFE87-AB86-4E9A-B231-B44875BD7083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F61BFE87-AB86-4E9A-B231-B44875BD7083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61BFE87-AB86-4E9A-B231-B44875BD7083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F61BFE87-AB86-4E9A-B231-B44875BD7083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2535362A-D53F-44CA-96E4-81C2A4DA19C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2535362A-D53F-44CA-96E4-81C2A4DA19C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2535362A-D53F-44CA-96E4-81C2A4DA19C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2535362A-D53F-44CA-96E4-81C2A4DA19C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6EC0A6F-E728-411A-83D2-AF68DCA83C80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6EC0A6F-E728-411A-83D2-AF68DCA83C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6EC0A6F-E728-411A-83D2-AF68DCA83C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6EC0A6F-E728-411A-83D2-AF68DCA83C80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C345C7E-6295-44E8-A524-BEE3C613D7FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C345C7E-6295-44E8-A524-BEE3C613D7FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C345C7E-6295-44E8-A524-BEE3C613D7FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C345C7E-6295-44E8-A524-BEE3C613D7FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7134A9FA-4C35-445D-ABD4-F44B8DE0A2CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7134A9FA-4C35-445D-ABD4-F44B8DE0A2CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7134A9FA-4C35-445D-ABD4-F44B8DE0A2CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7134A9FA-4C35-445D-ABD4-F44B8DE0A2CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

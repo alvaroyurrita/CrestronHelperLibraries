@@ -108,7 +108,7 @@ namespace Eternet_Extenders
         public event Action<string> DNS_Server_1_F_Changed;
         public string DNS_Server_1_F
         {
-            get { return CrestronEthernetHelper.GetEthernetParameter(CrestronEthernetHelper.ETHERNET_PARAMETER_TO_GET.GET_DNS_SERVER(, AdapterId); }
+            get { return CrestronEthernetHelper.GetEthernetParameter(CrestronEthernetHelper.ETHERNET_PARAMETER_TO_GET.GET_DNS_SERVER, AdapterId); }
             private set { if (DNS_Server_1_F_Changed != null) DNS_Server_1_F_Changed(DNS_Server_1_F); }
         }
         public event Action<string> DNS_Server_2_F_Changed;
